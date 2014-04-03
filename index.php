@@ -7,12 +7,9 @@ function pg_connection_string() {
   
   return "dbname=dccogtnrjh49bm host=ec2-54-204-41-178.compute-1.amazonaws.com  port=5432 user=cjcqnksjxlrzub password=xy4w2sHeIix_OFR7rnp9FZFUlx sslmode=require";
 }
- 
+ echo 'Registration Successfull';
 # Establish db connection
-$db = pg_connect(pg_connection_string());
-if (!$db) {
-    echo "Database connection error."
-}
+// $db = pg_connect(pg_connection_string());
  
 // $result = pg_query($db, "SELECT statement goes here");
 
@@ -52,12 +49,12 @@ if (!$db) {
 // 	die('Email Id Already Exist'.mysql_error());
 // }
 
-$sql="INSERT INTO Login(UserName,Password,Email,City,ProfilePic)VALUES ('CronTest','1234','a@b.com','abc','xyz')"; 
-
-$query=pg_query($sql,$db);
-if (!$query)
-{
-	die('Failed to Insert Data'.mysql_error());
-}
-echo 'Registration Successfull';
+// $sql="INSERT INTO Login(UserName,Password,Email,City,ProfilePic)VALUES ('CronTest','1234','a@b.com','abc','xyz')"; 
+// 
+// $query=pg_query($sql,$db);
+// if (!$query)
+// {
+// 	die('Failed to Insert Data'.mysql_error());
+// }
+// echo 'Registration Successfull';
 ?>
