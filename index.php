@@ -15,18 +15,18 @@ if (!$db) {
     exit;
 }
  
-$result = pg_query($db, "SELECT statement goes here");
+// $result = pg_query($db, "SELECT statement goes here");
 
 
 
-$server='localhost:8888';
-$user='root';
-$pass='root';
-$conn=mysql_connect($server,$user,$pass);
-if (!$conn) {
-	die('Could not Connect To Database'.mysql_error());
-}
-mysql_select_db("LoginDb");
+// $server='localhost:8888';
+// $user='root';
+// $pass='root';
+// $conn=mysql_connect($server,$user,$pass);
+// if (!$conn) {
+// 	die('Could not Connect To Database'.mysql_error());
+// }
+// mysql_select_db("LoginDb");
 
 // $json=file_get_contents("php://input");
 // $data=json_decode($json,true);
@@ -55,7 +55,7 @@ mysql_select_db("LoginDb");
 
 $sql="INSERT INTO Login(UserName,Password,Email,City,ProfilePic)VALUES ('CronTest','1234','a@b.com','abc','xyz')"; 
 
-$query=mysql_query($sql,$conn);
+$query=pg_query($sql,$db);
 if (!$query)
 {
 	die('Failed to Insert Data'.mysql_error());
