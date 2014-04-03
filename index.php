@@ -4,6 +4,8 @@
 # the return value is a string that will work with pg_connect
 function pg_connection_string() {
   // we will fill this out next
+  
+  return "dbname=dccogtnrjh49bm host=ec2-54-204-41-178.compute-1.amazonaws.com  port=5432 user=cjcqnksjxlrzub password=xy4w2sHeIix_OFR7rnp9FZFUlx sslmode=require";
 }
  
 # Establish db connection
