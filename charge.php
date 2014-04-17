@@ -6,7 +6,7 @@
 
 echo "test";
 
-require_once 'lib/Stripe.php';
+include 'lib/Stripe.php';
 include "config.php";
 
   $token  = $_POST['stripeToken'];

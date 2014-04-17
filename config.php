@@ -1,6 +1,6 @@
 <?php
 
-require_once 'lib/Stripe.php';
+include 'lib/Stripe.php';
 
 $stripe = array(
   "secret_key"      => "sk_test_6LctfFCyzLcB4RRaG12kVfiu",
