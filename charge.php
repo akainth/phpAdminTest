@@ -4,11 +4,13 @@
  <?php 
 //   require_once(dirname(__FILE__) . '/config.php');
 
+echo "test";
+
 require_once 'lib/Stripe.php';
 include "config.php";
 
   $token  = $_POST['stripeToken'];
-  var_dump($token);
+  
  try {
  	$customer = Stripe_Customer::create(array(
  			'email' => 'saggarwal1@seasiainfotech.com',
