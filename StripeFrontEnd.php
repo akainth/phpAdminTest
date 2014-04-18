@@ -4,7 +4,7 @@
 <title>Stripe API</title>
 </head>
 
-<form method="POST" action="Charge.php">
+<form method="POST" action="charge.php">
 
 Card Number :<input type="text" name="card"><br>
 Expiry Month: <input type="text" name="emonth"><br>
